@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+
+
+.sidebar {
+    position: absolute;
+    width: 304px;
+    height: 880px;
+    left: 323px;
+    top: 110px;
+    background-color: #353535;
+}
+
+
+.send {
+    padding: 20px;
+    position: absolute;
+    width: 150px;
+    height: 0px;
+    left: 30px;
+    top: 0;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26.0339px;
+    line-height: 32px;
+    
+    color: #FFFFFF;
+
+}
+
+.send {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 30px;
+    top: 50px;
+    
+    background: #42FF00;
+    border-radius: 12px;
+}
+
+.send span {
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
+
+.send img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.plategi {
+    
+position: absolute;
+width: 50px;
+height: 50px;
+left: 30px;
+top: 80px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26.0339px;
+    line-height: 32px;
+    
+    color: #FFFFFF;
+
+}
+
+.plategi {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 30px;
+    top: 150px;
+    
+    background: linear-gradient(91.51deg, #B79008 1.28%, rgba(219, 177, 29, 0) 112.44%);
+    border-radius: 12px;
+}
+
+.plategi span {
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
+
+.plategi img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.profile {
+    
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 30px;
+    top: 1025px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26.0339px;
+        line-height: 32px;
+        
+        color: #FFFFFF;
+    
+    }
+    
+    .profile {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 30px;
+        top: 800px;
+        
+        background: #FFFFFF;
+        border-radius: 12px;
+    }
+    
+    .profile span {
+        position: absolute;
+        left: 80px;
+        top: 10px;
+        width: 167px;
+height: 33px;
+    }
+    
+    .profile img {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+

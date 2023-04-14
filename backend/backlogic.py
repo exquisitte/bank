@@ -1,14 +1,15 @@
 import datetime
+
 import random
 from pymongo import MongoClient
 
 from random import randint
 
-cluster = "mongodb+srv://yanamefi:ABvmvRDon9jzISQ5@cluster0.xfc3xqp.mongodb.net/Users?retryWrites=true&w=majority"
+cluster = "mongodb+srv://timofy:22052009t@cluster0.0jebmyp.mongodb.net/users?retryWrites=true&w=majority"
 
 client = MongoClient(cluster)
 
-db = client.Users
+db = client.users
 
 bank_users = db.bank_users
 
@@ -32,6 +33,7 @@ def login_card(card_number, money, pin, cvv, date, send_to):
     if BU is not None:
         send_money1(card_number, money, send_to)
     else:
+
         print("something went wrong")
 
 

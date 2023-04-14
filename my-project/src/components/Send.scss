@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+
+.Send {
+    position: absolute;
+width: 789px;
+height: 560px;
+left: 808px;
+top: 280px;
+
+background: #353535;
+}
+
+.Send span {
+    position: absolute;
+    width: 464px;
+    height: 66px;
+    left: 165px;
+    top: 50px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51.0178px;
+    line-height: 66px;
+
+    color: #FFFFFF;
+}
+
+.pole span {
+position: absolute;
+width: 475px;
+height: 56px;
+left: 215px;
+top: 350px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 52px;
+color: #6F6F6F;
+}
+
+.btn {
+    position: absolute;
+width: 465px;
+height: 56.75px;
+left: 165px;
+top: 450px;
+
+background: rgba(66, 255, 0, 0.46);
+border-radius: 12.6102px;
+color: white;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+}
+
+.pole input {
+    position: absolute;
+    background-color:#353535; 
+    border: none;
+    outline: none; /* добавьте эту строку, чтобы убрать контур элемента при фокусировке */
+    color: white;
+    overflow: hidden;
+    width: 400px;
+    height: 56px;
+    font-size: 35px;   
+    top: 300px; 
+    left: 190px;
+}
+
+.pole input::placeholder {
+    font-size: 31px;
+    color: #6F6F6F;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+

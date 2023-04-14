@@ -14,4 +14,5 @@ def send_money(number: int, money: float, number_to: int, cvv: int, date: str, p
     return "works"
 
 @app.get("/account")
-def account_checking():
+def account_checking(number: int, cvv: int, date: str, pin: int):
+    login_card(number, None, pin, cvv, date, None, account(number))
