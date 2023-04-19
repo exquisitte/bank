@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 import random
 from pymongo import MongoClient
 
@@ -15,22 +15,23 @@ bank_users = db.bank_users
 
 def random_card_number(c_user, c_pin):
     random_card = random.randint(1000000000000000, 9999999999999999)
+    now = datetime.now()
+    year_month_str = now.strftime('%y/%m')
     users_result = bank_users.insert_one({
         "card_number": random_card,
         "card_user": c_user,
         "card_cvv": random.randint(100, 999),
         "card_pin": c_pin,
-        "card_date": datetime.datetime.combine(datetime.date.today(), datetime.time.min),
+        "card_date": year_month_str,
         "card_balance": 0,
     })
     return users_result
 
 
-def login_card(card_number, money, pin, cvv, date, send_to):
+def login_card(card_number, money, pin, cvv, date, send_to, func):
     BU = bank_users.find_one({"card_number": card_number, "card_cvv": cvv, "card_pin": pin, "card_date": date})
-    print(BU)
     if BU is not None:
-        send_money1(card_number, money, send_to)
+        func()
     else:
         print("something went wrong")
 
@@ -42,7 +43,6 @@ def send_money1(card_number_sender, send_money, card_to):
 
 
 class Bank:
-
     def __init__(self):
         self.collection = db.bank_users
 
@@ -70,3 +70,7 @@ class Bank:
         new_values = {"$set": {"card_balance": new_money}}
 
         self.collection.update_one(old_values, new_values)
+
+
+def account(card):
+    return bank_users.find_one({"card_number": card})
